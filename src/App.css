@@ -1,38 +1,88 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7; /* Light Gray Background */
+  color: #333; /* Dark Gray Text */
+}
+
 .App {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* White Background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light Shadow */
+}
+
+.weather-input {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ddd; /* Light Gray Border */
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green Button */
+  color: #fff; /* White Text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker Green on Hover */
+}
+
+.weather-details {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: #333; /* Dark Gray Heading */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin: 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button.toggle-btn {
+  margin-top: 20px; /* Adjusted margin to move the button down further */
+  margin-bottom: 20px; /* Added margin-bottom to move the button down */
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.toggle-btn:hover {
+  background-color: #2980b9; /* Darker Blue on Hover */
+}
+
+.forecast {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.forecast-item {
+  margin: 10px;
+  padding: 10px;
+  background-color: #e0e0e0; /* Light Gray Forecast Item Background */
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img.weather-icon {
+  width: 80px; /* Adjust the size of the weather icon */
+  border-radius: 50%; /* Make it a circle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light Shadow */
 }
